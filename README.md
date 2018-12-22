@@ -1,14 +1,18 @@
 #软件开发综合实践作业
 
-data struct
+###data struct
 
 4byte		filetype flag						char	0xca 0xff 0xee 0xad
-8*256byte	character freqency					long
+
+8*256byte	character freqency				long
+
 others		zip data							char
 
-
 usage:
-#include "Zip.h"
+
+```c
+include "Zip.h"
+
 	zip a;
 	a.open(filename);
 	a.zip()	or z.unzip();
@@ -29,3 +33,5 @@ unzip()
 
 write()
 	change tmpfile's name
+
+```
